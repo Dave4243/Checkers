@@ -109,13 +109,13 @@ public class Checkers extends JFrame implements ActionListener
 		selected = new Color(212,108,81);
 		dark = new Color(135,70,38);
 		light = new Color(222,188,149);
-        // gridbagconstraints sets visual aspects of conponents
-		
-        for (int row = 0; row < 8; row++)
-        {
-            for (int col = 0; col < 8; col++)
-            {
-                board[row][col] = new JButton();
+		// gridbagconstraints sets visual aspects of conponents
+
+		for (int row = 0; row < 8; row++)
+		{
+		    for (int col = 0; col < 8; col++)
+		    {
+				board[row][col] = new JButton();
 				board[row][col].setPreferredSize(new Dimension(64,64));
 
 				if ((row + col) % 2 == 0)
@@ -136,11 +136,11 @@ public class Checkers extends JFrame implements ActionListener
 					}
 				}
 
-                board[row][col].setBorder(new LineBorder(Color.BLACK));
-                board[row][col].addActionListener(this);
-                boardPanel.add(board[row][col]);
-            }
-        }
+				board[row][col].setBorder(new LineBorder(Color.BLACK));
+				board[row][col].addActionListener(this);
+				boardPanel.add(board[row][col]);
+		    }
+		}
 		setBoard();
 		p.add(boardPanel, c);
 
@@ -171,7 +171,7 @@ public class Checkers extends JFrame implements ActionListener
 		//f.setSize(700,740);
 		f.pack();
 		f.setVisible(true);
-    }
+   	}
 
 	public void initializeTimers()
 	{
