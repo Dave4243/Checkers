@@ -5,6 +5,12 @@ import java.awt.*;
 import java.awt.event.*;
 import java.text.DecimalFormat;
 
+/**
+* @author David Huang
+* @date   5/28/2023 (commit to github)
+* The Checkers.java class is a checkers game using Javax.swing.
+* Initially written in Summer 2022.
+*/
 public class Checkers extends JFrame implements ActionListener
 {
 	private static JFrame f;
